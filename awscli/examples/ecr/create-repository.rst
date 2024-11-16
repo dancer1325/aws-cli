@@ -1,6 +1,4 @@
-**Example 1: To create a repository**
-
-The following ``create-repository`` example creates a repository inside the specified namespace in the default registry for an account. ::
+**Example 1: create a repository | specified account's namespace's default registry **
 
     aws ecr create-repository \
         --repository-name project-a/sample-repo
@@ -15,11 +13,9 @@ Output::
         }
     }
 
-For more information, see `Creating a Repository <https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-create.html>`__ in the *Amazon ECR User Guide*.
+* `Creating a Repository <https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-create.html>`__ in the *Amazon ECR User Guide*.
 
-**Example 2: To create a repository configured with image tag immutability**
-
-The following ``create-repository`` example creates a repository configured for tag immutability in the default registry for an account. ::
+**Example 2: To create a repository / configured with image tag immutability | specified account's namespace's default registry **
 
     aws ecr create-repository \
         --repository-name project-a/sample-repo \
@@ -36,8 +32,9 @@ Output::
         }
     }
 
-For more information, see `Image Tag Mutability <https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-tag-mutability.html>`__ in the *Amazon ECR User Guide*.
+* `Image Tag Mutability <https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-tag-mutability.html>`__ 
 
+* TODO:
 **Example 3: To create a repository configured with a scanning configuration**
 
 The following ``create-repository`` example creates a repository configured to perform a vulnerability scan on image push in the default registry for an account. ::
